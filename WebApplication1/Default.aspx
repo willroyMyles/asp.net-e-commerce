@@ -5,9 +5,9 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <img src="images/ec2.jpg"/>
-            </div>
+                <img class="img-rounded display-block" src="images/ec2.jpg" style="display:block; max-width: 100%; height:auto; "/>
         </div>
     </div>
 
+    </div>
 </asp:Content>

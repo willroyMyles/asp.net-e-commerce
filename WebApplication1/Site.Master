@@ -14,7 +14,8 @@
 
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-
+    <script src="/Scripts/jquery-3.3.1.js" language="javascript" type="text/javascript"></script>
+    <script src="/Scripts/bootstrap-datepicker.js" language="javascript" type="text/javascript"></script>
 </head>
 <body>
     <form runat="server">
