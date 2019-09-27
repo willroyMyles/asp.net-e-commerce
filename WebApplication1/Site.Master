@@ -14,8 +14,8 @@
 
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-    <script src="/Scripts/jquery-3.3.1.js" language="javascript" type="text/javascript"></script>
-    <script src="/Scripts/bootstrap-datepicker.js" language="javascript" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+   
 </head>
 <body>
     <form runat="server">
@@ -39,20 +39,47 @@
             </Scripts>
         </asp:ScriptManager>
 
-         <div class="navbar">
-            <div class="container">
-                <div class="navbar-collapse collapse right">
-                    <ul class="nav navbar-nav navbar-right">
-\
-                        <li><a runat="server" href="~/"><h4>E-COMM</h4></a></li>
-                        <li><a runat="server" href="~/signup"><h4>SIGN UP</h4></a></li>
-                        <li><a runat="server" href="~/About"><h4>ABOUT</h4></a></li>
-                        <li><a runat="server" href="~/Contact"><h4>CONTACT</h4></a></li>
-                    </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample10" aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+            <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-2">
+
+                        </div>
+                        <div class="col-md-1 nav-item active">
+                            <a href="~/" runat="server" class="nav-link">kitty</a>
+                        </div>
+                        <div class="col-md-1 nav-item">
+                            <a href="~/#products" runat="server" class="nav-link">Product</a>
+                        </div>
+                        <div class="col-md-1 nav-item">
+                            <a href="~/About" runat="server" onclick="Response.redirect('~/About');" class="nav-link">about</a>
+                        </div>
+                        <div class="col-md-1 nav-item">
+                            <a href="#contact" class="nav-link" runat="server">Contact</a>
+                        </div>
+                        <div class="col-md-1 nav-item">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-cart-plus" aria-hidden="true"></i> Cart</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown10">
+                                <a class="dropdown-item" href="~/Cart" runat="server">view cart</a>
+                                <a class="dropdown-item" href="#">empty cart</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 nav-item">
+                            <a class="nav-link"></a>
+                        </div>
+                        <div class="col-md-2 nav-item">
+                            <a href="#" class="nav-link">Sign up</a>
+                        </div>
+
+                    </div>
                 </div>
             </div>
-        </div>
-
+        </nav>
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
@@ -63,5 +90,8 @@
         </div>
 
     </form>
+
+    <script src="/Scripts/bootstrap-input-spinner.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
 </body>
 </html>
